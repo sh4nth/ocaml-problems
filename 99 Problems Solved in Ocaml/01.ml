@@ -5,5 +5,6 @@ let rec last = function
     | [x] -> Some x
     | _::remaining -> last remaining ;;
 
+(* Sample Inputs *)
 last ["a" ; "b" ; "c" ; "d" ];;
 last [];;
