@@ -1,6 +1,6 @@
 (* Find the k'th element of a list. *)
 
-let rec kth k = function
+let rec kth k = if k < 0 then function _ -> None else function
     | [] -> None
     | this::rest -> if (k = 0) then Some this else kth (k-1) rest ;;
 
